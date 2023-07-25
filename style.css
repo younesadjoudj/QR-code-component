@@ -1,0 +1,96 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    --ff-primary: 'Outfit', sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+/* General styling */
+
+body {
+    background-color: var(--clr-light-gray);
+    height: 100vh;
+    font-size: 15px;
+    font-family: var(--ff-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--clr-white);
+    max-width: 40vh;
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.card h1 {
+    color: var(--clr-dark-blue);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.card p {
+    color: var(--grayish-blue);
+    text-align: center;
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
